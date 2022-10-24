@@ -24,3 +24,16 @@ export const Default: StoryObj<InputRootProps> = {
     },
   },
 };
+
+export const WithoutIcon: StoryObj<InputRootProps> = {
+  args: {
+    children: <TextInput.Input placeholder="Digite algo no campo" />,
+  },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+};
